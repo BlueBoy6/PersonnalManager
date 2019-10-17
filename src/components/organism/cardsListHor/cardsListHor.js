@@ -11,7 +11,7 @@ function cardsListHor(props) {
 	}
 
 	return (
-		<div>
+		<div className="cards_list_horizontal">
 			{cardListRender(props.cardsList)}
 		</div>
 	)

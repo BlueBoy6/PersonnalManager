@@ -13,6 +13,8 @@
 	background-position: 50% 50%;
 	overflow: hidden;
 	box-shadow: 0px 5px 15px rgba(118, 75, 162, 0.15);
+	transform: scale(1);
+	@include easetransition(0.1s);
 	
 	&>*{position: relative; z-index: 2;}
 	&:before{
@@ -30,7 +32,8 @@
 
 	// HOVER STATE
 	&:hover{
-		transform: scale(0.95);
+		transform: scale(0.98);
 		transform-origin: 50% 50%;
+		@include easetransition(0.1s);
 	}
 }
