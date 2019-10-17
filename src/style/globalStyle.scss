@@ -1,0 +1,29 @@
+// import resetter
+@import './resetter.scss';
+
+// import variables
+@import './variables.scss';
+
+
+html, body{
+	background: $blacklighter;
+	*{
+		font-family: Arial, Helvetica, sans-serif;
+	}
+}
+
+
+// imports ATOMS
+@import '../components/atom/inputs/inputs.scss';
+@import '../components/atom/pagination/pagination.scss';
+@import '../components/atom/text/text.scss';
+@import '../components/atom/title/title.scss';
+
+// imports MOLECULES
+@import '../components/molecule/card/card.scss';
+@import '../components/molecule/formulary/form.scss';
+@import '../components/molecule/multipleCheckbox/multipleCheckbox.scss';
+
+// imports ORGANISMS
+@import '../components/organism/cardsListHor/cardsListHor.scss';
+@import '../components/organism/menu/menu.scss';
