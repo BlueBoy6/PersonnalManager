@@ -1,14 +1,20 @@
-import React from 'react'
+import React, {useState} from 'react';
 import PropTypes from 'prop-types'
 import Title from '../../atom/title/title';
+import {Redirect, Link} from "react-router-dom";
 
 
 function Card(props) {
-	const {id, title, img} = props
+	const {id, title, img, link} = props;
+
+	function redirect_CB(){
+		console.log('try to redirect : ', link)
+	}
+
 	return (
-		<div className="card" style={{backgroundImage: `url(${img})`}}>
+		<Link to={link} className="card" style={{backgroundImage: `url(${img})`}}>
 			<Title level={3} label={title} />
-		</div>
+		</Link>
 	)
 }
 
