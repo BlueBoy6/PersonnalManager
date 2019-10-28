@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Card from '../../molecule/card/card'
 
-function cardsListHor(props) {
+function CardsListHor(props) {
 
 	function cardListRender(cardsList){
 		if (!cardsList) return null;
@@ -17,9 +17,9 @@ function cardsListHor(props) {
 	)
 }
 
-cardsListHor.propTypes = {
+CardsListHor.propTypes = {
 	cardsList: PropTypes.array
 }
 
-export default cardsListHor
+export default CardsListHor
 
